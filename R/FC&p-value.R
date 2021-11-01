@@ -37,5 +37,5 @@ for (i in 2:length(b1)){
   P_w = c(P_w,pvalue)
 }
 pad_w = p.adjust(P_w,method = 'BH')
-data2 = data.frame('mean1'=mean1,'mean2'=mean2,'FC'=FC,'log2FC'=log2FC,'¶ÀÁ¢wilcoxon p-value'=P_w,'¶ÀÁ¢wilcoxon adjust-p'=pad_w)
+data2 = data.frame('mean1'=mean1,'mean2'=mean2,'FC'=FC,'log2FC'=log2FC,'Â¶Ã€ÃÂ¢wilcoxon p-value'=P_w,'Â¶Ã€ÃÂ¢wilcoxon adjust-p'=pad_w)
 write.csv(data2,"./data/432 lipid FC&p.CSV",row.names = F)
