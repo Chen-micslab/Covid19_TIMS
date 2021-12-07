@@ -1,5 +1,5 @@
 library(pheatmap)
-data = read.csv('./data/area matrix.csv',row.names = 1,header = T,stringsAsFactors = F)
+data = read.csv('./data/area_matrix.csv',row.names = 1,header = T,stringsAsFactors = F)
 data1 = data
 data1 = log10(data1)
 for (i in 1:length(row.names(data1))){
