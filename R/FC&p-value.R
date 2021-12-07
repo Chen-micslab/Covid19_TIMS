@@ -1,4 +1,4 @@
-data = read.csv("./data/432 lipid.csv",header = F,row.names = 1)
+data = read.csv("./data/432_lipid.csv",header = F,row.names = 1)
 data1 = data
 a = data[1,] 
 a1 = character()
@@ -38,4 +38,4 @@ for (i in 2:length(b1)){
 }
 pad_w = p.adjust(P_w,method = 'BH')
 data2 = data.frame('mean1'=mean1,'mean2'=mean2,'FC'=FC,'log2FC'=log2FC,'¶ÀÁ¢wilcoxon p-value'=P_w,'¶ÀÁ¢wilcoxon adjust-p'=pad_w)
-write.csv(data2,"./data/432 lipid FC&p.CSV",row.names = F)
+write.csv(data2,"./data/432_lipid_FC&p.CSV",row.names = F)
