@@ -1,5 +1,5 @@
 library(pheatmap)
-data = read.csv('./data/area matrix.CSV',row.names = 1,header = T,stringsAsFactors = F)
+data = read.csv('./data/area matrix.csv',row.names = 1,header = T,stringsAsFactors = F)
 data1 = data
 data1 = log10(data1)
 for (i in 1:length(row.names(data1))){
@@ -7,7 +7,7 @@ for (i in 1:length(row.names(data1))){
   b = scale(a,center = TRUE,scale = TRUE)
   data1[i,] = b
 }
-z = read.csv('./data/annotation.CSV',header = T,stringsAsFactors = F)
+z = read.csv('./data/annotation.csv',header = T,stringsAsFactors = F)
 x=colnames(data) 
 rownames(z)<-x
 bk = c(seq(-9,-0.1,by=0.02),seq(0,9,by=0.02))
